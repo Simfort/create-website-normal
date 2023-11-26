@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+
+nav{
+    margin-left: 70%;
+}
+.nav__a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s;
+}
+.nav__a:hover{
+    border-bottom: 2px solid black;
+    color: rgb(59, 90, 90);
+}
+.zag{
+    position: absolute;
+    transition: all 1s;
+    cursor: pointer;
+}
+.zag:hover{
+    letter-spacing: 10px;
+    transition: all 1s;
+
+}
+.A{
+    display: inline-block;
+    margin-right: 2px;
+}
+.zag:hover .A{
+    transform: rotate(360deg);
+    transition: all 1s;
+    animation: anim 1s infinite ease;
+}
+@keyframes anim {
+    0%{
+       color: rgb(0, 0, 0);
+    }
+    50%{
+       color: rgb(255, 255, 255); 
+    }
+    100%{
+        color: rgb(0, 0, 0); 
+    }
+}
+.menu{
+   
+   
+    height: 30px;
+    width: 50px;
+    margin-left: 30px;
+}
+.menu::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.menu::after{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 10px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.menu2{
+    display: inline-block;
+    position: absolute;
+    left: 1500px;
+    box-shadow: 0px 0px 5px;
+    top: 90px;
+    height: 500px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    
+    
+}
+.krest2{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    
+}
+.krest2::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 10px;
+    background-color: black;
+    border-radius: 20px ;
+    transform: rotate(45deg);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.krest2::after{
+    content: '';
+    display: inline-block;
+    height: 40px;
+    width: 10px;
+    background-color: black;
+    border-radius: 20px ;
+    transform: rotate(-45deg);
+ 
+   
+    
+}
