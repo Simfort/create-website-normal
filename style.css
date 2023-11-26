@@ -1,0 +1,45 @@
+
+main{
+    min-height: 100vh;
+}
+footer{
+    overflow: hidden;
+    margin: 0px;
+    height: 120px;
+    background: #000;
+    color: aliceblue;
+}
+.config{
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.ping{
+    margin: 20px;
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+.pingvin{
+margin: 20px;
+font-weight: bold;
+}
+
+.poisnenina{
+
+    display: flex;
+    justify-content: center;
+
+}
+.poisnenina p {
+    transition: 250ms all;
+    position: relative;
+    bottom: 20px;
+}
+.poisnenina p:hover{
+font-size:20px;
+overflow: hidden;
+}
